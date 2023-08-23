@@ -14,6 +14,7 @@
 	--normal-font-size: 1.2rem;
 }
 
+/* can be used later */
 @media (prefers-color-scheme: dark) {
 	:root {
 		--foreground-rgb: 255, 255, 255;
@@ -48,27 +49,6 @@
 		--card-rgb: 100, 100, 100;
 		--card-border-rgb: 200, 200, 200;
 	}
-}
-
-html,
-body {
-	max-width: 100vw;
-	overflow-x: hidden;
-}
-
-body {
-	color: rgb(var(--foreground-rgb));
-	background: linear-gradient(
-			to bottom,
-			transparent,
-			rgb(var(--background-end-rgb))
-		)
-		rgb(var(--background-start-rgb));
-}
-
-a {
-	color: inherit;
-	text-decoration: none;
 }
 
 @media (prefers-color-scheme: dark) {
