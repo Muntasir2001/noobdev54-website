@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import styles from './page.module.scss';
-import Particles from '@/components/particles';
+import Particles from '@/components/Particles';
 
 export default function Home() {
 	return (
@@ -21,6 +21,7 @@ export default function Home() {
 					quantity={100}
 				/>
 				<h1 className={styles.title}>Noob Dev 54</h1>
+
 				<div className={styles['glow-line']} />
 				<div className={styles.body}>
 					<h2 className={styles['custom-heading']}>

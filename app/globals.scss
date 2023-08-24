@@ -15,6 +15,10 @@
 	--normal-font-size: 1.2rem;
 }
 
+body {
+	background-color: var(--background-color);
+}
+
 /* can be used later */
 @media (prefers-color-scheme: dark) {
 	:root {
