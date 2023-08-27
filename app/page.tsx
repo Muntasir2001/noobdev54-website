@@ -3,34 +3,46 @@ import Link from 'next/link';
 import styles from './page.module.scss';
 import Particles from '@/components/Particles';
 
+const navigation = [
+	{ name: 'Projects', href: '/projects' },
+	{ name: 'Contact', href: '/contact' },
+];
+
 export default function Home() {
 	return (
 		<>
-			<div className={styles.parent}>
-				<nav className={styles.nav}>
-					<Link href='/projects' className={styles.link}>
-						Projects
-					</Link>
-					<Link href='/contact' className={styles.link}>
-						Contact
-					</Link>
+			<div className='flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black'>
+				<nav className='my-16 animate-fade-in'>
+					<ul className='flex items-center justify-center gap-4'>
+						{navigation.map((item) => (
+							<Link
+								key={item.href}
+								href={item.href}
+								className='text-sm duration-500 text-zinc-500 hover:text-zinc-300'
+							>
+								{item.name}
+							</Link>
+						))}
+					</ul>
 				</nav>
-				<div className={styles['glow-line']} />
+				<div className='hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0' />
 				<Particles
-					className={styles['particles-container']}
+					className='absolute inset-0 -z-10 animate-fade-in'
 					quantity={100}
 				/>
-				<h1 className={styles.title}>Noob Dev 54</h1>
+				<h1 className='z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text '>
+					Noob Dev 54
+				</h1>
 
-				<div className={styles['glow-line']} />
-				<div className={styles.body}>
-					<h2 className={styles['custom-heading']}>
-						Hi, my name is Andreas, I'm building serverless and open
+				<div className='hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0' />
+				<div className='my-16 text-center animate-fade-in'>
+					<h2 className='text-sm text-zinc-500 '>
+						Hi, my name is Noob Dev 54, I'm building serverless and open
 						source solutions at{' '}
 						<Link
 							target='_blank'
 							href='https://upstash.com'
-							className={styles['custom-link']}
+							className='underline duration-500 hover:text-zinc-300'
 						>
 							Upstash
 						</Link>
@@ -39,7 +51,7 @@ export default function Home() {
 						<Link
 							target='_blank'
 							href='https://unkey.dev'
-							className={styles['custom-link']}
+							className='underline duration-500 hover:text-zinc-300'
 						>
 							unkey.dev
 						</Link>{' '}
