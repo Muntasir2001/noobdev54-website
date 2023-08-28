@@ -1,15 +1,13 @@
-/** @type {import('tailwindcss').Config} */
 const defaultTheme = require('tailwindcss/defaultTheme');
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
 	content: [
-		'./app/**/*.{js,ts,jsx,tsx,mdx}',
-		'./pages/**/*.{js,ts,jsx,tsx,mdx}',
-		'./components/**/*.{js,ts,jsx,tsx,mdx}',
-
-		// Or if using `src` directory:
-		// './src/**/*.{js,ts,jsx,tsx,mdx}',
+		'./app/**/*.{js,ts,jsx,tsx}',
+		'./mdx-components.tsx',
+		'content/**/*.mdx',
 	],
+
 	theme: {
 		extend: {
 			typography: {
@@ -106,5 +104,8 @@ module.exports = {
 			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('@tailwindcss/typography'),
+		require('tailwindcss-debug-screens'),
+	],
 };
