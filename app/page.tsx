@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-import styles from './page.module.scss';
 import Particles from '@/components/Particles';
 
 const navigation = [

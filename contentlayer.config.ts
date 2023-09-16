@@ -22,6 +22,9 @@ export const Project = defineDocumentType(() => ({
 		repository: {
 			type: 'string',
 		},
+		thumbnailUrl: {
+			type: 'string',
+		},
 	},
 	computedFields: {
 		url: {
