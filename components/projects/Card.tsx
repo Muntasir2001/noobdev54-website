@@ -1,10 +1,5 @@
 'use client';
-import {
-	motion,
-	useMotionTemplate,
-	useMotionValue,
-	useSpring,
-} from 'framer-motion';
+import { motion, useMotionTemplate, useSpring } from 'framer-motion';
 
 import { PropsWithChildren } from 'react';
 
