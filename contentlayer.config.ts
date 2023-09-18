@@ -13,10 +13,13 @@ export const Project = defineDocumentType(() => ({
 			type: 'string',
 			required: true,
 		},
+		isFeatured: {
+			type: 'boolean',
+		},
 		date: {
 			type: 'date',
 		},
-		url: {
+		websiteUrl: {
 			type: 'string',
 		},
 		repository: {
@@ -24,6 +27,9 @@ export const Project = defineDocumentType(() => ({
 		},
 		thumbnailUrl: {
 			type: 'string',
+		},
+		random: {
+			type: 'string', // to type giberish to get rid off \r special char
 		},
 	},
 	computedFields: {
