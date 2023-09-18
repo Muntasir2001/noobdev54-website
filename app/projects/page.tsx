@@ -26,7 +26,7 @@ export default async () => {
 
 					{/* featured */}
 					<Card>
-						<Link href={`/projects/featured.slug`}>
+						<Link href={`/projects/${featured.url}`}>
 							<article className='relative w-full h-[15rem] p-4 md:p-8'>
 								<h2
 									id='featured-post'
@@ -49,6 +49,16 @@ export default async () => {
 						</Link>
 					</Card>
 					<div className='hidden w-full h-px md:block bg-zinc-800' />
+
+					<div className='grid grid-cols-1 gap-4 mx-auto lg:mx-0 md:grid-cols-3'>
+						{allProjects
+							.filter((p) => !p.isFeatured)
+							.map((project) => (
+								<Card key={project.url}>
+									<Article project={project} slug={project.url} />
+								</Card>
+							))}
+					</div>
 				</div>
 			</div>
 		</>
