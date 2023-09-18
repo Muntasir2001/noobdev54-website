@@ -25,6 +25,14 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang='en' className={[inter.variable, calSans.variable].join(' ')}>
+			<head>
+				<link
+					rel='shortcut icon'
+					type='image/png'
+					sizes='32x32'
+					href='/favicon/favicon-32x32.png'
+				/>
+			</head>
 			<body className={inter.className}>{children}</body>
 		</html>
 	);
