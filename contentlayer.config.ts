@@ -21,6 +21,7 @@ export const Project = defineDocumentType(() => ({
 		},
 		websiteUrl: {
 			type: 'string',
+			required: true,
 		},
 		repository: {
 			type: 'string',
@@ -35,7 +36,7 @@ export const Project = defineDocumentType(() => ({
 	computedFields: {
 		url: {
 			type: 'string',
-			resolve: (post) => `/${post._raw.flattenedPath}`,
+			resolve: (post) => `${post._raw.flattenedPath}`,
 		},
 	},
 }));
