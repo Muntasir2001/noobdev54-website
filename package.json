@@ -1,25 +1,46 @@
 {
-  "name": "noobdev54-website",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@emotion/css": "^11.10.6",
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@types/node": "18.15.11",
-    "@types/react": "18.0.31",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.37.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "5.0.3"
-  }
+	"name": "noobdev54-website",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
+	},
+	"dependencies": {
+		"@next/font": "^13.4.19",
+		"@types/node": "20.5.3",
+		"@types/react": "18.2.21",
+		"@types/react-dom": "18.2.7",
+		"contentlayer": "^0.3.4",
+		"date-fns": "^2.30.0",
+		"eslint": "8.47.0",
+		"eslint-config-next": "13.4.19",
+		"framer-motion": "^10.16.4",
+		"lucide-react": "^0.220.0",
+		"markdown-wasm": "^1.2.0",
+		"next": "13.4.19",
+		"next-contentlayer": "^0.3.4",
+		"react": "18.2.0",
+		"react-dom": "18.2.0",
+		"react-wrap-balancer": "^0.5.0",
+		"rehype-autolink-headings": "^6.1.1",
+		"rehype-pretty-code": "^0.9.4",
+		"rehype-slug": "^5.1.0",
+		"remark-gfm": "^3.0.1",
+		"sass": "^1.66.1",
+		"typescript": "5.1.6"
+	},
+	"devDependencies": {
+		"@opentelemetry/api": "^1.4.1",
+		"@tailwindcss/line-clamp": "^0.4.2",
+		"@tailwindcss/typography": "^0.5.9",
+		"autoprefixer": "^10.4.15",
+		"postcss": "^8.4.28",
+		"postcss-nesting": "^11.2.2",
+		"rome": "^11.0.0",
+		"tailwindcss": "^3.3.3",
+		"tailwindcss-debug-screens": "^2.2.1"
+	}
 }
