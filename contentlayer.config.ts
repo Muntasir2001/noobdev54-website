@@ -21,7 +21,6 @@ export const Project = defineDocumentType(() => ({
 		},
 		websiteUrl: {
 			type: 'string',
-			required: true,
 		},
 		repository: {
 			type: 'string',

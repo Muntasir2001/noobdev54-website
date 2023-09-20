@@ -9,7 +9,7 @@ type Props = {
 		title: string;
 		description: string;
 		repository?: string;
-		websiteUrl: string;
+		websiteUrl?: string;
 	};
 };
 export const Header: React.FC<Props> = ({ project }) => {
@@ -23,7 +23,7 @@ export const Header: React.FC<Props> = ({ project }) => {
 			href: `https://github.com/${project.repository}`,
 		});
 	}
-	if (project.url) {
+	if (project.websiteUrl) {
 		links.push({
 			label: 'Website',
 			href: project.websiteUrl,
