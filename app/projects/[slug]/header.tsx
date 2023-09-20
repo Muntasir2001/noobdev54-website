@@ -53,7 +53,7 @@ export const Header: React.FC<Props> = ({ project }) => {
 			>
 				<div className='container flex flex-row-reverse items-center justify-between p-6 mx-auto'>
 					<div className='flex justify-between gap-8'>
-						<Link target='_blank' href='https://github.com/chronark'>
+						<Link target='_blank' href='https://github.com/Muntasir2001'>
 							<Github
 								className={`w-6 h-6 duration-200 hover:font-medium ${
 									isIntersecting
