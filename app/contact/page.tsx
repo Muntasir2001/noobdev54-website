@@ -2,7 +2,7 @@
 import { Github, Mail, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { Navbar } from '@/components/projects/Navbar';
-import { Card } from '@/components/projects/Card';
+import { Card } from '@/components/Card';
 
 const socials = [
 	{

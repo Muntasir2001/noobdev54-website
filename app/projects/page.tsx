@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-import { Card } from '@/components/projects/Card';
+import { Card } from '@/components/Card';
 import { Navbar } from '@/components/projects/Navbar';
 import { Article } from '@/components/projects/Article';
 import { allProjects } from '@/.contentlayer/generated';
