@@ -1,7 +1,7 @@
 'use client';
 import { Github, Mail, Instagram } from 'lucide-react';
 import Link from 'next/link';
-import { Navbar } from '@/components/projects/Navbar';
+import { Navbar } from '@/components/Navbar';
 import { Card } from '@/components/Card';
 
 const socials = [

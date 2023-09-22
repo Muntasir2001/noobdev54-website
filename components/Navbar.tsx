@@ -26,12 +26,12 @@ export const Navbar: React.FC = () => {
 						: 'bg-zinc-900/500  border-zinc-800 '
 				}`}
 			>
-				<div className='container flex items-center justify-between p-6 mx-auto'>
+				<div className='container flex items-center justify-between gap-1 md:gap-2 p-6 mx-auto'>
 					<Link
 						href='/'
 						className='duration-200 text-zinc-300 hover:text-zinc-100'
 					>
-						<ArrowLeft className='w-6 h-6 ' />
+						<ArrowLeft className='w-6 h-6' />
 					</Link>
 
 					<div className='flex justify-between gap-8'>
@@ -40,6 +40,12 @@ export const Navbar: React.FC = () => {
 							className='duration-200 text-zinc-400 hover:text-zinc-100'
 						>
 							Projects
+						</Link>
+						<Link
+							href='/technical-skillsets'
+							className='duration-200 text-zinc-400 hover:text-zinc-100'
+						>
+							Technical Skillsets
 						</Link>
 						<Link
 							href='/contact'

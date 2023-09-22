@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { Card } from '@/components/Card';
-import { Navbar } from '@/components/projects/Navbar';
+import { Navbar } from '@/components/Navbar';
 import { Article } from '@/components/projects/Article';
 import { allProjects } from '@/.contentlayer/generated';
 
@@ -13,7 +13,7 @@ export default async () => {
 			<div className='relative pb-16'>
 				<Navbar />
 				<div className='px-6 pt-16 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24'>
-					<div className='max-w-2xl mx-auto lg:mx-0 mt-5 md:mt-0'>
+					<div className='max-w-2xl mx-auto lg:mx-0 mt-12 md:mt-0'>
 						<h2 className='text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl md:mt-12'>
 							Projects
 						</h2>
@@ -26,8 +26,8 @@ export default async () => {
 
 					{/* featured */}
 					<Card>
-						<Link href={`/projects/${featured.url}`}>
-							<article className='relative w-full h-[15rem] p-4 md:p-8'>
+						<Link className='h-full' href={`/projects/${featured.url}`}>
+							<article className='relative w-full h-full p-4 md:p-8'>
 								<h2
 									id='featured-post'
 									className='mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display'
