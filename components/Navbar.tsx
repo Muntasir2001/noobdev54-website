@@ -45,7 +45,7 @@ export const Navbar: React.FC = () => {
 							href='/technical-skillsets'
 							className='duration-200 text-zinc-400 hover:text-zinc-100'
 						>
-							Technical Skillsets
+							Skillsets
 						</Link>
 						<Link
 							href='/contact'
