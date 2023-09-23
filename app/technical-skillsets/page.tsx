@@ -217,7 +217,7 @@ export default async () => {
 
 					<div className='w-full flex flex-wrap gap-5'>
 						{skills.map((s, i) => (
-							<Card>
+							<Card key={i}>
 								<div className='flex gap-4 items-center justify-center py-4 px-6 h-full'>
 									{s.icon}
 									<h3 className='text-2xl font-bold text-zinc-100 group-hover:text-white font-display'>
