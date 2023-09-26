@@ -27,7 +27,7 @@ export default async () => {
 					{/* featured */}
 					<Card>
 						<Link className='h-full' href={`/projects/${featured.url}`}>
-							<article className='relative w-full h-full p-4 md:p-8'>
+							<article className='w-full h-full p-4 md:p-8'>
 								<h2
 									id='featured-post'
 									className='mt-4 text-3xl font-bold text-zinc-100 group-hover:text-white sm:text-4xl font-display'
@@ -37,14 +37,12 @@ export default async () => {
 								<p className='mt-4 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300'>
 									{featured.description}
 								</p>
-								<div className='absolute bottom-4 md:bottom-8'>
-									<p className='hidden text-zinc-200 hover:text-zinc-50 lg:block'>
-										Read more
-										<span className='ml-1.5' aria-hidden='true'>
-											&rarr;
-										</span>
-									</p>
-								</div>
+								<p className='mt-8 hidden text-zinc-200 hover:text-zinc-50 lg:block'>
+									Read more
+									<span className='ml-1.5' aria-hidden='true'>
+										&rarr;
+									</span>
+								</p>
 							</article>
 						</Link>
 					</Card>
